@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///social.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///polez-net.db"
 db = SQLAlchemy(app)
 
 class User(db.Model):
